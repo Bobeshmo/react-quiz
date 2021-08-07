@@ -1,6 +1,7 @@
 import React from 'react'
 import classes from './FinishedQuiz.css'
-import Button from "../UI/Button/Button";
+import Button from '../UI/Button/Button';
+import {Link} from 'react-router-dom'
 
 class FinishedQuiz extends React.Component {
     constructor (props) {
@@ -41,7 +42,9 @@ class FinishedQuiz extends React.Component {
 
                 <div>
                     <Button onClick={this.props.onRetry} type='primary'>Повторить</Button>
-                    <Button onClick={this.props.onRetry} type='success'>Перейти в список тестов</Button>
+                    <Link to={'/'}>
+                        <Button type='success'>Перейти в список тестов</Button>
+                    </Link>
                 </div>
             </div>
         )
