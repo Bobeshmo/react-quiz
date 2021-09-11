@@ -13,9 +13,8 @@
     margin: 0;
 }
 
-.FinishedQuiz ul span {
+.FinishedQuiz ul li i {
     margin-left: 10px;
-    font-size: 16px;
 }
 
 .success {
